@@ -1,0 +1,17 @@
+site_name: Web Development in PHP
+theme:
+    name: material
+
+nav:
+  - Home: index.md
+  - Local Server: local.md
+
+repo_name: mapattacker/php-web-devlopment
+repo_url: https://github.com/mapattacker/php-web-devlopment
+
+markdown_extensions:
+    - pymdownx.highlight
+    - pymdownx.superfences
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
