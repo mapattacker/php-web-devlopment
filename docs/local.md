@@ -6,14 +6,40 @@ It is available in Windows, Mac and Linux.
 
 ## Start Up
 
+After launching the app, at the **General** tab, click *Start* to start the XAMPP virtual machine. 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/mapattacker/php-web-development/master/images/xampp1.png" style="width:90%" />
+  <figcaption></figcaption>
+</figure>
+
+Then we can go to the **Service** tab and start the required services.
+
+<figure>
+  <img src="https://raw.githubusercontent.com/mapattacker/php-web-development/master/images/xampp2.png" style="width:90%" />
+  <figcaption></figcaption>
+</figure>
 
 ## Enable Remote Access to phpMyAdmin
 
-phpMyAdmin is a 
+To access **phpMyAdmin**, a browser admin service for MySQL/MariaDB, at the General tab, click **Go to Application**. This opens a browser where the top right tab goes to it.
 
-The XAMPP application is launched within a virtual machine which can only be access via the terminal launched at the General tab.
+<figure>
+  <img src="https://raw.githubusercontent.com/mapattacker/php-web-development/master/images/xampp4.png" style="width:90%" />
+  <figcaption></figcaption>
+</figure>
+
+However, on first launch, access to it is blocked by default. 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/mapattacker/php-web-development/master/images/xampp3.png" style="width:90%" />
+  <figcaption></figcaption>
+</figure>
+
+Steps to unblock is shown at the **HOW-TO Guide** tab at the same page. Essentially, we need go into the VM to change some config files. This can be done at the General tab, **Open Terminal**. Within the terminal, install an editor like nano.
 
 ```bash
 apt-get update
 apt-get install nano
 ```
+
