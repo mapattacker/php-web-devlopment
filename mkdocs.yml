@@ -1,13 +1,12 @@
-site_name: Web Development in PHP
-theme:
+site_name: Web Development Guide
     name: material
 
 nav:
   - Home: index.md
-  - Local Server: local.md
+  - XAMPP: xampp.md
 
-repo_name: mapattacker/php-web-devlopment
-repo_url: https://github.com/mapattacker/php-web-devlopment
+repo_name: mapattacker/web-development
+repo_url: https://github.com/mapattacker/web-development
 
 markdown_extensions:
     - pymdownx.highlight
