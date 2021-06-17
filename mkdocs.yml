@@ -10,6 +10,7 @@ repo_name: mapattacker/web-development
 repo_url: https://github.com/mapattacker/web-development
 
 markdown_extensions:
+    - admonition
     - pymdownx.highlight
     - pymdownx.superfences
     - pymdownx.emoji:
