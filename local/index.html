@@ -218,9 +218,45 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Local Server
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Local Server
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#start-up" class="md-nav__link">
+    Start Up
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-remote-access-to-phpmyadmin" class="md-nav__link">
+    Enable Remote Access to phpMyAdmin
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -244,6 +280,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#start-up" class="md-nav__link">
+    Start Up
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-remote-access-to-phpmyadmin" class="md-nav__link">
+    Enable Remote Access to phpMyAdmin
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -262,6 +320,36 @@
                 <h1 id="development-environment">Development Environment</h1>
 <p>PHP is a server side language, so we can only see how it runs when we start the local server. For that, we can install <a href="https://www.apachefriends.org/index.html">XAMPP</a>, a web server stack consisting of PHP, MariaDB and Apache Server.</p>
 <p>It is available in Windows, Mac and Linux.</p>
+<h2 id="start-up">Start Up</h2>
+<p>After launching the app, at the <strong>General</strong> tab, click <em>Start</em> to start the XAMPP virtual machine. </p>
+<figure>
+  <img src="https://raw.githubusercontent.com/mapattacker/php-web-development/master/images/xampp1.png" style="width:90%" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Then we can go to the <strong>Service</strong> tab and start the required services.</p>
+<figure>
+  <img src="https://raw.githubusercontent.com/mapattacker/php-web-development/master/images/xampp2.png" style="width:90%" />
+  <figcaption></figcaption>
+</figure>
+
+<h2 id="enable-remote-access-to-phpmyadmin">Enable Remote Access to phpMyAdmin</h2>
+<p>To access <strong>phpMyAdmin</strong>, a browser admin service for MySQL/MariaDB, at the General tab, click <strong>Go to Application</strong>. This opens a browser where the top right tab goes to it.</p>
+<figure>
+  <img src="https://raw.githubusercontent.com/mapattacker/php-web-development/master/images/xampp4.png" style="width:90%" />
+  <figcaption></figcaption>
+</figure>
+
+<p>However, on first launch, access to it is blocked by default. </p>
+<figure>
+  <img src="https://raw.githubusercontent.com/mapattacker/php-web-development/master/images/xampp3.png" style="width:90%" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Steps to unblock is shown at the <strong>HOW-TO Guide</strong> tab at the same page. Essentially, we need go into the VM to change some config files. This can be done at the General tab, <strong>Open Terminal</strong>. Within the terminal, install an editor like nano.</p>
+<div class="highlight"><pre><span></span><code>apt-get update
+apt-get install nano
+</code></pre></div>
                 
               
               
