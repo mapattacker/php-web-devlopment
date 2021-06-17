@@ -1,4 +1,5 @@
-site_name: Web Development Guide
+site_name: Web Development
+theme:
     name: material
 
 nav:
