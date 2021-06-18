@@ -82,3 +82,14 @@ To load them in your new database in your local server, we can either click on t
   <img src="https://github.com/mapattacker/php-web-devlopment/blob/master/images/myphpadmin3.png?raw=true" style="width:100%" />
   <figcaption></figcaption>
 </figure>
+
+
+## Launching your Website
+
+After mounting your volume, enter the directory and go into the folder **htdocs**; this is where all your web files are read from in your browser. You can dump your entire folder of website here.
+
+To access it use the **IP Address** indicated at the **General** tab of XAMPP app, together with your folder name you place in the *htdocs* directory, E.g. https://192.168.64.3/uforest. It should load if it has a index.html or index.php inside. There might be some browser security warnings, but you can ignore them since you know that you are loading your own website.
+
+## Error Logs
+
+For effective debugging, your php log files are stored in the `/opt/lampp/logs/` folder. For exceptions, you can print out php info `echo phpinfo();` in your website and search for the **error_log** row.

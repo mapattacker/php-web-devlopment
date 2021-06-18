@@ -5,6 +5,11 @@ theme:
 nav:
   - Home: index.md
   - XAMPP: xampp.md
+  - htaccess: htaccess.md
+  - FTP: ftp.md
+  - Web Analytics: analytics.md
+  - Site Map: sitemap.md
+  - AdSense: adsense.md
 
 repo_name: mapattacker/web-development
 repo_url: https://github.com/mapattacker/web-development
