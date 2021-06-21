@@ -278,9 +278,45 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Site Map
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Site Map
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-it-is" class="md-nav__link">
+    What It Is
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-sitemap" class="md-nav__link">
+    Sample Sitemap
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -319,6 +355,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-it-is" class="md-nav__link">
+    What It Is
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-sitemap" class="md-nav__link">
+    Sample Sitemap
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -336,10 +394,12 @@
                 
                 <h1 id="sitemap">Sitemap</h1>
 <p><a href="https://www.sitemaps.org/protocol.html">Sitemaps</a> are an easy way for webmasters to inform search engines about pages on their sites that are available for crawling. It is contained within the file <code>sitemap.xml</code></p>
+<h2 id="what-it-is">What It Is</h2>
 <blockquote>
 <p>In its simplest form, a Sitemap is an XML file that lists URLs for a site along with additional metadata about each URL (when it was last updated, how often it usually changes, and how important it is, relative to other URLs in the site) so that search engines can more intelligently crawl the site.</p>
 <p>Web crawlers usually discover pages from links within the site and from other sites. Sitemaps supplement this data to allow crawlers that support Sitemaps to pick up all URLs in the Sitemap and learn about those URLs using the associated metadata. Using the Sitemap protocol does not guarantee that web pages are included in search engines, but provides hints for web crawlers to do a better job of crawling your site.</p>
 </blockquote>
+<h2 id="sample-sitemap">Sample Sitemap</h2>
 <p>Below is a sample sitemap.xml file. There are 3 optional tags, <code>lastmod</code>, <code>changefreq</code> and <code>priority</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 
