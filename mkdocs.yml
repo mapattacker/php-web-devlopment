@@ -7,8 +7,8 @@ nav:
   - XAMPP: xampp.md
   - htaccess: htaccess.md
   - FTP: ftp.md
-  - Web Analytics: analytics.md
   - Site Map: sitemap.md
+  - Web Analytics: analytics.md
   - AdSense: adsense.md
 
 repo_name: mapattacker/web-development
