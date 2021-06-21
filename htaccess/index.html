@@ -341,13 +341,15 @@
 <div class="highlight"><pre><span></span><code>ErrorDocument 404 /404.php
 </code></pre></div>
 <h1 id="rewriting">Rewriting</h1>
-<p>Rewriting usually accompanies the bulk of the file. We will need to have a command to on the <code>RewriteEngine</code> first. Regular expressions are used to parse the conditions.</p>
+<p>Rewriting usually accompanies the bulk of the file. We will need to have a command to on the <code>RewriteEngine</code> first. Regular expressions are used to parse the conditions. There is usually a condition to check <code>RewriteCond</code> before doing the actual rewriting <code>RewriteRule</code>.</p>
 <div class="highlight"><pre><span></span><code>RewriteEngine On
 
-# remove php extension
+# remove php extension, if not file or uri
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(/$|\.)
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-# force all traffic to domain to use HTTPS
+# if not using HTTPS, force to use it
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R]
 </code></pre></div>
