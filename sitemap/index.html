@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#site-map" class="md-skip">
+        <a href="#sitemap" class="md-skip">
           Skip to content
         </a>
       
@@ -334,12 +334,67 @@
                   </a>
                 
                 
-                <h1 id="site-map">Site Map</h1>
-<p><a href="https://www.sitemaps.org/protocol.html">Sitemaps</a> are an easy way for webmasters to inform search engines about pages on their sites that are available for crawling. </p>
+                <h1 id="sitemap">Sitemap</h1>
+<p><a href="https://www.sitemaps.org/protocol.html">Sitemaps</a> are an easy way for webmasters to inform search engines about pages on their sites that are available for crawling. It is contained within the file <code>sitemap.xml</code></p>
 <blockquote>
 <p>In its simplest form, a Sitemap is an XML file that lists URLs for a site along with additional metadata about each URL (when it was last updated, how often it usually changes, and how important it is, relative to other URLs in the site) so that search engines can more intelligently crawl the site.</p>
 <p>Web crawlers usually discover pages from links within the site and from other sites. Sitemaps supplement this data to allow crawlers that support Sitemaps to pick up all URLs in the Sitemap and learn about those URLs using the associated metadata. Using the Sitemap protocol does not guarantee that web pages are included in search engines, but provides hints for web crawlers to do a better job of crawling your site.</p>
 </blockquote>
+<p>Below is a sample sitemap.xml file. There are 3 optional tags, <code>lastmod</code>, <code>changefreq</code> and <code>priority</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+
+<span class="nt">&lt;urlset</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.sitemaps.org/schemas/sitemap/0.9&quot;</span><span class="nt">&gt;</span>
+
+   <span class="nt">&lt;url&gt;</span>
+
+      <span class="nt">&lt;loc&gt;</span>http://www.example.com/<span class="nt">&lt;/loc&gt;</span>
+
+      <span class="nt">&lt;lastmod&gt;</span>2005-01-01<span class="nt">&lt;/lastmod&gt;</span>
+
+      <span class="nt">&lt;changefreq&gt;</span>monthly<span class="nt">&lt;/changefreq&gt;</span>
+
+      <span class="nt">&lt;priority&gt;</span>0.8<span class="nt">&lt;/priority&gt;</span>
+
+   <span class="nt">&lt;/url&gt;</span>
+
+   <span class="nt">&lt;url&gt;</span>
+
+      <span class="nt">&lt;loc&gt;</span>http://www.example.com/catalog?item=12<span class="ni">&amp;amp;</span>desc=vacation_hawaii<span class="nt">&lt;/loc&gt;</span>
+
+      <span class="nt">&lt;changefreq&gt;</span>weekly<span class="nt">&lt;/changefreq&gt;</span>
+
+   <span class="nt">&lt;/url&gt;</span>
+
+   <span class="nt">&lt;url&gt;</span>
+
+      <span class="nt">&lt;loc&gt;</span>http://www.example.com/catalog?item=73<span class="ni">&amp;amp;</span>desc=vacation_new_zealand<span class="nt">&lt;/loc&gt;</span>
+
+      <span class="nt">&lt;lastmod&gt;</span>2004-12-23<span class="nt">&lt;/lastmod&gt;</span>
+
+      <span class="nt">&lt;changefreq&gt;</span>weekly<span class="nt">&lt;/changefreq&gt;</span>
+
+   <span class="nt">&lt;/url&gt;</span>
+
+   <span class="nt">&lt;url&gt;</span>
+
+      <span class="nt">&lt;loc&gt;</span>http://www.example.com/catalog?item=74<span class="ni">&amp;amp;</span>desc=vacation_newfoundland<span class="nt">&lt;/loc&gt;</span>
+
+      <span class="nt">&lt;lastmod&gt;</span>2004-12-23T18:00:15+00:00<span class="nt">&lt;/lastmod&gt;</span>
+
+      <span class="nt">&lt;priority&gt;</span>0.3<span class="nt">&lt;/priority&gt;</span>
+
+   <span class="nt">&lt;/url&gt;</span>
+
+   <span class="nt">&lt;url&gt;</span>
+
+      <span class="nt">&lt;loc&gt;</span>http://www.example.com/catalog?item=83<span class="ni">&amp;amp;</span>desc=vacation_usa<span class="nt">&lt;/loc&gt;</span>
+
+      <span class="nt">&lt;lastmod&gt;</span>2004-11-23<span class="nt">&lt;/lastmod&gt;</span>
+
+   <span class="nt">&lt;/url&gt;</span>
+
+<span class="nt">&lt;/urlset&gt;</span>
+</code></pre></div>
                 
               
               
