@@ -275,6 +275,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#upload-files" class="md-nav__link">
+    Upload Files
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -417,6 +424,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#upload-files" class="md-nav__link">
+    Upload Files
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -508,6 +522,9 @@ apt-get install nano
 <p>To access it use the <strong>IP Address</strong> indicated at the <strong>General</strong> tab of XAMPP app, together with your folder name you place in the <em>htdocs</em> directory, E.g. https://192.168.64.3/uforest. It should load if it has a index.html or index.php inside. There might be some browser security warnings, but you can ignore them since you know that you are loading your own website.</p>
 <h2 id="error-logs">Error Logs</h2>
 <p>For effective debugging, your php log files are stored in the <code>/opt/lampp/logs/</code> folder. For exceptions, you can print out php info <code>echo phpinfo();</code> in your website and search for the <strong>error_log</strong> row.</p>
+<p>To clean out the logs in the log file, enter into the terminal and <code>rm error_log</code>. A new file will be created automatically.</p>
+<h2 id="upload-files">Upload Files</h2>
+<p>XAMPP does not allow your code to have permissions to upload file. So if you use <code>move_uploaded_file()</code> you will get a Permissed Denied error. You can use the liberal <code>sudo chmod 777 images/</code> to the folder to allow access.</p>
                 
               
               
