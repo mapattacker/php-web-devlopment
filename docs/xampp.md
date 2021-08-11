@@ -90,6 +90,8 @@ After mounting your volume, enter the directory and go into the folder **htdocs*
 
 To access it use the **IP Address** indicated at the **General** tab of XAMPP app, together with your folder name you place in the *htdocs* directory, E.g. https://192.168.64.3/uforest. It should load if it has a index.html or index.php inside. There might be some browser security warnings, but you can ignore them since you know that you are loading your own website.
 
+Note that if you have a username and password in your configs for ur website to access MySQL. You will need to change it to the defaults, username as **"root"**, and password as **""**.
+
 ## Error Logs
 
 For effective debugging, your php log files are stored in the `/opt/lampp/logs/` folder. For exceptions, you can print out php info `echo phpinfo();` in your website and search for the **error_log** row.
