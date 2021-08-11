@@ -93,3 +93,9 @@ To access it use the **IP Address** indicated at the **General** tab of XAMPP ap
 ## Error Logs
 
 For effective debugging, your php log files are stored in the `/opt/lampp/logs/` folder. For exceptions, you can print out php info `echo phpinfo();` in your website and search for the **error_log** row.
+
+To clean out the logs in the log file, enter into the terminal and `rm error_log`. A new file will be created automatically.
+
+## Upload Files
+
+XAMPP does not allow your code to have permissions to upload file. So if you use `move_uploaded_file()` you will get a Permissed Denied error. You can use the liberal `sudo chmod 777 images/` to the folder to allow access.

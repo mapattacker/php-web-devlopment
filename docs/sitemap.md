@@ -71,3 +71,5 @@ Below is a sample sitemap.xml file. There are 3 optional tags: `lastmod`, `chang
 ## Submitting the Sitemap
 
 Google is the most dominate search engine in world, so it is a must to submit your sitemap to it. This is done through the [Google Search Console](https://search.google.com/search-console).
+
+Bing is another search engine which has its [Webmaster Tools](https://www.bing.com/webmasters/) to submit your sitemap and do some analysis of your website.
